@@ -1,8 +1,9 @@
 const Path = require('path');
+const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
@@ -26,8 +27,33 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     }),
-    new ManifestPlugin({
-      fileName: '../src/assets-manifest.json',
+    new WebpackAssetsManifest({
+      output: '../src/assets-manifest.json',
+      transform: () => {
+        const imagesPath = Path.resolve(__dirname, '../src/assets/sprites/');
+        const soundsPath = Path.resolve(__dirname, '../src/assets/audio/');
+        const images = fs.readdirSync(imagesPath);
+        const sounds = fs.readdirSync(soundsPath);
+
+        let manifest = {
+          images: {},
+          sounds: {},
+        };
+
+        manifest.images = images.reduce((result, current) => {
+          const fileName = current.split('.')[0];
+          result[fileName] = `${imagesPath}\\${current}`;
+          return result
+        }, {});
+
+        manifest.sounds = sounds.reduce((result, current) => {
+          const fileName = current.split('.')[0];
+          result[fileName] = `${imagesPath}\\${current}`;
+          return result
+        }, {});
+
+        return manifest
+      }
     }),
 
   ],
