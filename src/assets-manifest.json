@@ -1,37 +1,150 @@
 {
-  "images": {
-    "0": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\0.png",
-    "1": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\1.png",
-    "2": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\2.png",
-    "3": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\3.png",
-    "4": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\4.png",
-    "5": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\5.png",
-    "6": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\6.png",
-    "7": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\7.png",
-    "8": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\8.png",
-    "9": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\9.png",
-    "backgroundDay": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\backgroundDay.png",
-    "backgroundNight": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\backgroundNight.png",
-    "base": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\base.png",
-    "bluebirdDownflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdDownflap.png",
-    "bluebirdMidflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdMidflap.png",
-    "bluebirdUpflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdUpflap.png",
-    "gameover": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\gameover.png",
-    "message": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\message.png",
-    "pipeGreen": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\pipeGreen.png",
-    "pipeRed": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\pipeRed.png",
-    "redbirdDownflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdDownflap.png",
-    "redbirdMidflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdMidflap.png",
-    "redbirdUpflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdUpflap.png",
-    "yellowbirdDownflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdDownflap.png",
-    "yellowbirdMidflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdMidflap.png",
-    "yellowbirdUpflap": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdUpflap.png"
-  },
-  "sounds": {
-    "die": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\die.wav",
-    "hit": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\hit.wav",
-    "point": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\point.wav",
-    "swoosh": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\swoosh.wav",
-    "wing": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\wing.wav"
-  }
+  "images": [
+    {
+      "name": "0",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\0.png"
+    },
+    {
+      "name": "1",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\1.png"
+    },
+    {
+      "name": "2",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\2.png"
+    },
+    {
+      "name": "3",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\3.png"
+    },
+    {
+      "name": "4",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\4.png"
+    },
+    {
+      "name": "5",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\5.png"
+    },
+    {
+      "name": "6",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\6.png"
+    },
+    {
+      "name": "7",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\7.png"
+    },
+    {
+      "name": "8",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\8.png"
+    },
+    {
+      "name": "9",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\9.png"
+    },
+    {
+      "name": "backgroundDay",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\backgroundDay.png"
+    },
+    {
+      "name": "backgroundNight",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\backgroundNight.png"
+    },
+    {
+      "name": "base",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\base.png"
+    },
+    {
+      "name": "bluebirdDownflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdDownflap.png"
+    },
+    {
+      "name": "bluebirdMidflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdMidflap.png"
+    },
+    {
+      "name": "bluebirdUpflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\bluebirdUpflap.png"
+    },
+    {
+      "name": "gameover",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\gameover.png"
+    },
+    {
+      "name": "message",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\message.png"
+    },
+    {
+      "name": "pipeGreen",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\pipeGreen.png"
+    },
+    {
+      "name": "pipeRed",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\pipeRed.png"
+    },
+    {
+      "name": "redbirdDownflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdDownflap.png"
+    },
+    {
+      "name": "redbirdMidflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdMidflap.png"
+    },
+    {
+      "name": "redbirdUpflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\redbirdUpflap.png"
+    },
+    {
+      "name": "yellowbirdDownflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdDownflap.png"
+    },
+    {
+      "name": "yellowbirdMidflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdMidflap.png"
+    },
+    {
+      "name": "yellowbirdUpflap",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\yellowbirdUpflap.png"
+    }
+  ],
+  "sounds": [
+    {
+      "name": "die",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\die.ogg"
+    },
+    {
+      "name": "die",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\die.wav"
+    },
+    {
+      "name": "hit",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\hit.ogg"
+    },
+    {
+      "name": "hit",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\hit.wav"
+    },
+    {
+      "name": "point",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\point.ogg"
+    },
+    {
+      "name": "point",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\point.wav"
+    },
+    {
+      "name": "swoosh",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\swoosh.ogg"
+    },
+    {
+      "name": "swoosh",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\swoosh.wav"
+    },
+    {
+      "name": "wing",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\wing.ogg"
+    },
+    {
+      "name": "wing",
+      "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\wing.wav"
+    }
+  ]
 }

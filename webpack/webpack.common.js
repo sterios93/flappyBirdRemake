@@ -32,25 +32,33 @@ module.exports = {
       transform: () => {
         const imagesPath = Path.resolve(__dirname, '../src/assets/sprites/');
         const soundsPath = Path.resolve(__dirname, '../src/assets/audio/');
+
         const images = fs.readdirSync(imagesPath);
         const sounds = fs.readdirSync(soundsPath);
 
         let manifest = {
-          images: {},
-          sounds: {},
+          images: [],
+          sounds: [],
         };
 
         manifest.images = images.reduce((result, current) => {
           const fileName = current.split('.')[0];
-          result[fileName] = `${imagesPath}\\${current}`;
+          result.push({
+            name: fileName,
+            url: `${imagesPath}\\${current}`
+          })
           return result
-        }, {});
+        }, []);
 
         manifest.sounds = sounds.reduce((result, current) => {
           const fileName = current.split('.')[0];
-          result[fileName] = `${imagesPath}\\${current}`;
+          result.push({
+            name: fileName,
+            url: `${imagesPath}\\${current}`
+          })
+
           return result
-        }, {});
+        }, []);
 
         return manifest
       }
