@@ -107,43 +107,43 @@
   ],
   "sounds": [
     {
-      "name": "die",
+      "name": "die.ogg",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\die.ogg"
     },
     {
-      "name": "die",
+      "name": "die.wav",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\die.wav"
     },
     {
-      "name": "hit",
+      "name": "hit.ogg",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\hit.ogg"
     },
     {
-      "name": "hit",
+      "name": "hit.wav",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\hit.wav"
     },
     {
-      "name": "point",
+      "name": "point.ogg",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\point.ogg"
     },
     {
-      "name": "point",
+      "name": "point.wav",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\point.wav"
     },
     {
-      "name": "swoosh",
+      "name": "swoosh.ogg",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\swoosh.ogg"
     },
     {
-      "name": "swoosh",
+      "name": "swoosh.wav",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\swoosh.wav"
     },
     {
-      "name": "wing",
+      "name": "wing.ogg",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\wing.ogg"
     },
     {
-      "name": "wing",
+      "name": "wing.wav",
       "url": "D:\\Projects\\flappybirdgame\\src\\assets\\sprites\\wing.wav"
     }
   ]

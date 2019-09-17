@@ -51,9 +51,8 @@ module.exports = {
         }, []);
 
         manifest.sounds = sounds.reduce((result, current) => {
-          const fileName = current.split('.')[0];
           result.push({
-            name: fileName,
+            name: current,
             url: `${imagesPath}\\${current}`
           })
 

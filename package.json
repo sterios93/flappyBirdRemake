@@ -42,6 +42,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "core-js": "^3.0.1",
+    "howler": "^2.1.2",
     "pixi.js": "^5.1.2"
   }
 }
