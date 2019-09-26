@@ -43,23 +43,28 @@ module.exports = {
 
         manifest.images = images.reduce((result, current) => {
           const fileName = current.split('.')[0];
+          const ext = '.' +  current.split('.')[1];
+
           result.push({
+            fullName: current,
             name: fileName,
-            url: `${imagesPath}\\${current}`
-          })
-          return result
+            ext
+          });
+          return result;
         }, []);
 
         manifest.sounds = sounds.reduce((result, current) => {
+          const ext = '.' + current.split('.')[1];
+
           result.push({
             name: current,
-            url: `${imagesPath}\\${current}`
-          })
+            ext
+          });
 
-          return result
+          return result;
         }, []);
 
-        return manifest
+        return manifest;
       }
     }),
 
