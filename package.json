@@ -4,7 +4,7 @@
   "description": "Just a remake of flappy bird game.",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "serve": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "keywords": [
     "frontend"
   ],
-  "author": "webkid.io",
+  "author": "taskudis",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.0",
