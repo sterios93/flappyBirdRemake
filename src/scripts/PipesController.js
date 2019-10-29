@@ -9,11 +9,11 @@ export default class PipesController extends PIXI.Container {
     this.pipesAhead = [];
   }
 
-  createPipeGroup() {
+  spawnPipes() {
     const pipeTop = new Pipe(this.pipeTexture, true);
     const pipeBottom = new Pipe(this.pipeTexture);
     pipeTop.once('pipe-out', () => {
-      this.createPipeGroup();
+      this.spawnPipes();
     });
 
     pipeTop.once('score', () => {
